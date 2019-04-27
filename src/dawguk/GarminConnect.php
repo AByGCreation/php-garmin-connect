@@ -156,7 +156,8 @@ class GarminConnect
             throw new AuthenticationException($strMessage);
         }
 
-        $strTicket = $arrMatches[0];
+//        $strTicket = $arrMatches[0]; // . 
+        $strTicket = $arrMatches[1];
         $arrParams = array(
             'ticket' => $strTicket
         );
